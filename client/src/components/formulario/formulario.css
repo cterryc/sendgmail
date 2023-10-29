@@ -1,0 +1,124 @@
+.form-container {
+  width: 100%;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  background-image: url("../../assets/Fondo-Email.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.form {
+  height: 300px;
+  /* padding: 20px; */
+  background-color: rgba(94, 135, 163, 0.8);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-div {
+  height: 200px;
+  padding: 0 20px;
+  margin: 10px 0;
+
+  display: flex;
+}
+
+.container-button {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  /* margin-bottom: 20px; */
+}
+
+.form-button {
+  background-color: #157aec;
+  height: 35px;
+  width: 150px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #609ee6;
+}
+
+.container-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-labes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.input {
+  outline: none;
+  height: 22.39px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  color: black;
+  width: 250px;
+  font-size: 14px;
+}
+
+.input::placeholder {
+  color: #bebebe;
+  font-size: 12px;
+}
+
+.input:focus {
+  background-color: rgb(57, 240, 240);
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-width: 3px;
+  border-style: dashed solid solid dotted;
+  border-color: #157aec #157aec transparent #157aec;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin: 20px;
+}
+
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 20px;
+  top: 31px;
+  border: 10px solid transparent;
+  border-right-color: #157aec;
+  transform: rotate(-40deg);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
