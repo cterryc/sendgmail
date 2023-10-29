@@ -47,7 +47,7 @@ const Formulario = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(inputs)
       }
-      const response = await fetch('http://localhost:3001/email', requestOptions)
+      const response = await fetch('https://sendgmail.onrender.com/email', requestOptions)
       const data = await response.json()
       if (data.error) {
         MySwal.fire(
